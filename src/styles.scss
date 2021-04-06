@@ -1,0 +1,143 @@
+body {
+  background-image: url("https://www.wallpapertip.com/wmimgs/39-392681_dark-clouds-over-ocean.jpg");
+  font-family: 'Hind', sans-serif;
+}
+
+#container {
+  color:white;
+  height: 30em;
+  left: 0;
+  right: 0;
+  font-weight: 700;
+  top: 0;
+}
+
+#time {
+  background-color: #76cdd8;
+
+  color:white;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 5em;
+  top: 0;
+
+  h1 {
+    padding-top: 0;
+    padding-left: 20em;
+    height: 100%;
+  }
+}
+
+#weather {
+  position: absolute;
+  left: 0;
+  top: 4.2em;
+  width: 20em;
+  height: 20em;
+
+  h3 {
+    text-align: center;
+  }
+
+  #widget {
+    display: block;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 4em;
+    height: 13em;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  #refresh {
+    display: block;
+    text-align: center;
+    margin: auto;
+    margin-top: 2em;
+  }
+}
+
+#weather-form {
+  position: absolute;
+  left: 13em;
+  right: 20em;
+  top: 2.5em;
+  width: auto;
+  height: 35em;
+
+  padding-top: 5.5em;
+  padding-left: 21em;
+
+  h1 {
+    padding-bottom: 0.4em;
+  }
+
+  #formik {
+    top: 10em;
+    padding-left: 6em;
+
+    .input-value {
+      padding-top: 0em;
+      margin-top: .5em;
+      border: 3px solid #76cdd8;
+      cursor: pointer;
+      margin-bottom: .5em;
+    }
+
+    #submit-button {
+      padding-top: 1em;
+    }
+  }
+}
+
+#history {
+  position: absolute;
+  right: 0;
+  padding-top: 6em;
+  width: 20em;
+  height: 35em;
+
+  text-align: center;
+
+  h1 {
+    padding-bottom: 0.5em;
+  }
+
+  .history-row {
+    color: white;
+    height: 5em;
+    padding-bottom: 1em;
+
+    h3 {
+      font-size: small;
+      text-align: left;
+      padding-left: 4em;
+      top:0;
+      bottom: 0;
+    }
+  }
+}
+
+.hisButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 1rem 2.7rem 1rem 2.9rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  transition: background-color .5s ease .01ms;
+  border-radius: .9rem;
+  border: 0;
+  cursor: pointer;
+  background-color: #76cdd8;
+  color:white;
+  font: 400 13.3333px Arial;
+  font-size: 1em;
+}
