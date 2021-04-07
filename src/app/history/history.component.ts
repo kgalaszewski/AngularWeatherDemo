@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { HistoryService } from '../history.service';
+import { Component, Input, OnInit } from '@angular/core';
+import { WeatherDetails } from '../weather-details.model';
 
 @Component({
   selector: 'app-history',
@@ -9,7 +9,9 @@ import { HistoryService } from '../history.service';
 })
 export class HistoryComponent implements OnInit {
 
-  constructor(service: HistoryService) { }
+  @Input('history') history: WeatherDetails[];
+
+  constructor() { }
 
   ngOnInit(): void {
   }

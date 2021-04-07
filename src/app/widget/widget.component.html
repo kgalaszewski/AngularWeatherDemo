@@ -1,5 +1,5 @@
-<div id="widget"><img src="https://zielonamapa.pl/wp-content/uploads/2020/10/gdansk-5-500x333.jpg"></div>
-<h3>Location : Gdańsk</h3>
+<div id="widget"><img [src]="cityImageAdress"></div>
+<h3>Location : {{lastInfo.country}}, {{lastInfo.city}}, {{lastInfo.locationDetails}}</h3>
 <h3>Weather conditions : Sunny</h3>
 <h3>Temperature : 32 stopnie C</h3>
-<button class="hisButton" id="refresh">Refresh</button>
+<button class="hisButton" id="refresh" (click)="onWidgetRefresh()">Refresh</button>

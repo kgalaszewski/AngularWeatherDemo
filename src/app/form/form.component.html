@@ -1,20 +1,23 @@
     <h1>Set new weather location : </h1>
-    <form id="formik">
+    <form id="formik" novalidate #myForm="ngForm" (submit)="onFormSubmit(myForm)">
       <div class="row">
         <label class="description"><b>Country :</b></label> <br>
-        <input class="input-value" type="text">
+        <input class="input-value" type="text" placeholder="Country name : 'Poland'"
+        name="countryInput" #countryInput="ngModel" [(ngModel)]="detailsModel.country">
       </div>
       <br>
       <div class="row">
         <label class="description"><b>City :</b></label> <br>
-        <input class="input-value" type="text">
+        <input class="input-value" type="text" placeholder="City name : 'Gdansk'"
+        name="cityInput" #cityInput="ngModel" [(ngModel)]="detailsModel.city">
       </div>
       <br>
       <div class="row">
         <label class="description"><b>Location details :</b></label> <br>
-        <input class="input-value" type="text">
+        <input class="input-value" type="text" placeholder="District or anything:"
+        name="detailsInput" #detailsInput="ngModel" [(ngModel)]="detailsModel.locationDetails">
       </div> <br>
       <div id="submit-button">
-        <input class="hisButton" type="submit" value="Submit">
+        <button class="hisButton">Submit</button>
       </div>
     </form>

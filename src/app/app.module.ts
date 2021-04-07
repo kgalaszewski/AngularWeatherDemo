@@ -9,8 +9,7 @@ import { FormComponent } from './form/form.component';
 import { HistoryComponent } from './history/history.component';
 import { SummaryComponent } from './summary/summary.component';
 import { FormService } from './form.service';
-import { HistoryService } from './history.service';
-import { WidgetService } from './widget.service';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -23,12 +22,11 @@ import { WidgetService } from './widget.service';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [
-    FormService,
-    HistoryService,
-    WidgetService
+    FormService
   ],
   bootstrap: [AppComponent]
 })
