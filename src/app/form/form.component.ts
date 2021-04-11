@@ -13,6 +13,7 @@ export class FormComponent implements OnInit {
 
   @Output() detailsEvent = new EventEmitter<WeatherDetails>();
   detailsModel: WeatherDetails = new WeatherDetails();
+  isSummaryVisible: boolean = false;
 
   constructor(private service: FormService) { }
 
@@ -23,6 +24,15 @@ export class FormComponent implements OnInit {
     const details = new WeatherDetails(Date.now(), country, city, locationDetails);
     this.service.addDetailsToHistory(details);
     this.detailsEvent.emit(details);
+
+    // setting summary as visible
+    // form visible == summary not visible
+    this.isSummaryVisible = true;
+  }
+
+  setFormAsVisible(): void {
+    // form visible == summary not visible
+    this.isSummaryVisible = false;
   }
 
   ngOnInit(): void {

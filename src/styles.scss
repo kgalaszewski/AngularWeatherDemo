@@ -87,7 +87,7 @@ body {
       margin-top: .5em;
       border: 3px solid #76cdd8;
       cursor: pointer;
-      margin-bottom: .5em;
+      margin-bottom: 1em;
     }
 
     #submit-button {
@@ -141,4 +141,26 @@ body {
   color:white;
   font: 400 13.3333px Arial;
   font-size: 1em;
+
+  &:hover {
+    border: 1px solid #0099cc;
+  }
+
+  &:disabled,
+  button[disabled]{
+    border: 1px solid #999999;
+    cursor:not-allowed;
+  }
+}
+
+.alert {
+  color:red;
+}
+
+.Summary {
+  top: 10em;
+}
+
+.SummaryButton {
+  margin-left: 6em;
 }
